@@ -1,0 +1,74 @@
+﻿@model WebApp_ExercicioPratico03_Lab2_2017_2.Models.Estudante
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Estudante</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco.Endereco1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco.Endereco1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstudanteNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstudanteNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Datanascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Datanascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Foto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Foto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Altura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Altura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NivelEnsinoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NivelEnsinoId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EstudanteId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
